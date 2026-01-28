@@ -1,0 +1,221 @@
+/*colors to remember
+#0BFFEB  light cyan
+#00FFCC  cyan
+#FF00A9  cyber pink*/
+
+/* google was my friend here*/
+
+html, body {
+    margin: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    color: #00FFCC;
+    font-family: 'Orbitron', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#game {
+    position: relative;
+    width: 90vw;
+    max-width: 1000px;
+    min-width: 600px;
+    height: 90vh;
+    background-image: url("BG1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height:700px;
+    border: 1px solid #0BFFEB;
+    box-shadow: 0 0 30px #0BFFEB;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: 'Orbitron', monospace;
+    font-size: 40px;
+    color: #00FFCC;
+    letter-spacing: 4px;
+}
+
+
+#titleScreen {
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    padding: 40px;
+}
+
+#titleScreen p {
+    margin:8px 0;
+    letter-spacing: 1px;
+    font-size: 22px;
+    word-spacing: 4px;
+}
+
+#startButton {
+    font-family: 'Turret Road', sans-serif;
+    font-size: 28px;
+    align-self: center;
+    text-align: center;
+    letter-spacing: 3px;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+    padding: 20px 40px;
+    background: black;
+    border: 2px solid #FF00A9;
+    box-shadow: 0 0 20px #FF00A9;
+    cursor:pointer;
+    color:white;
+}
+
+.dialue {
+    text-align: center;
+}
+
+#text {
+    white-space: pre-wrap;
+    line-height: 1.8;
+    padding: 0 50;
+    margin-top: 45px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 7px;
+    letter-spacing: 1.5px;
+    font-size: 19px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    text-indent: 0;
+    display: block;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: auto;
+    padding-bottom: 20px;
+    width: fit-content;
+    align-self:center;
+}
+
+#choices button {
+    background: black;
+    color: #0BffCC;
+    border: 1px solid #0BFFEB;
+    box-shadow: 0 0 20px #0BFFEB;
+    margin-bottom: 20px;
+    font-family: 'Turret Road', sans-serif;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+    white-space: pre-wrap;
+    font-size: 18px;
+    padding: 10px 12px;
+    width: 100%;
+    /*max-width: 700px;*/
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#choices button:hover:not(:disabled) {
+    background: black;
+    color: white;
+    border: 2.5px solid #FF00BF;
+    box-shadow: 0 0 20px #FF00BF;
+    transform: translateY(-3px);
+}
+
+#choices button:disabled {
+    cursor: not-allowed;
+    color: #FF0000;
+    box-shadow: none;
+    border-color: #440000;
+}
+
+#choices input {
+    display:block;
+    width: 100%;
+    padding: 20px 30px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    align-self: center;
+    text-align: center;
+
+    background: black;
+    color: #FF00A9;
+    border: 2px solid #0BFFEB;
+    box-shadow: 0 0 15px #0BFFEB;
+    font-family: 'Turret Road', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+#choices input:focus {
+    box-shadow: 0 0 20px #FF00BF,0 0 30px #FF00A9;
+    border: 1px;
+    border-color: #FF00A9;
+    color: #FF00A9;
+}
+
+#choices input::placeholder {
+    color: #00FFCC;
+    opacity: 1;
+    font-size: 16px;
+    align-self: center;
+    border: 2px;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00FFCC;
+    box-shadow: 0 0 20px #FF00BF, 0 0 40px #FF00BF, 0 0 40px #FF00BF;
+}
+
+#randomSprite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+
+}

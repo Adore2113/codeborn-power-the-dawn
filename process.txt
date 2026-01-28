@@ -1,0 +1,59 @@
+19/12/2025
+
+- I decided to turn my project from CS50P to Javascript so that it can be interactive and playable
+
+- I first needed to get the size right when it opened so I started with startscreen and when I uploaded
+  it without the transform lines in style.css it was huge
+
+- I realize when I made my game in Python, I named the photos things that didn't make sense so I'm going to change those
+
+- I'm going to try to make the intro not as long by going over text again and limiting frames
+
+- I realize that when I made this game before, I actually drew text directly on the background of some of the terminal screens,
+  which made managing a ton of jpg photos kind of a mess, so this time I'm cutting back what would have been over 14 background images
+  down to about 8 AND I'm going to randomize a list of text for the top and bottom of the background
+  screens. This seems like a big improvement even if I have to change a bit of code now, good thing
+  I decided this early on.
+
+- I've updated the termial background art and added them to project/assets/backgrounds/
+
+- I'm considering changing the narrative a bit to make more sense
+
+- At this point I came back to my code after changing some backgrounds and realized I was a bit off course and deicded to clean up my code and
+  go over it line by line so far to realy make sense of what I have so far and to organize it
+
+- I thought compiling them all into seperate backgrounds was a good idea, but that's what I did in Python, and there had to be a better way
+  then constantly makiing seperate actions for every single background
+
+- I used : outline: 2px dashed rgba(255, 0, 0, 0.8); to check where my click spots were on the home screen and will use this idea for the
+  remaining button areas I need to make
+
+- In the game.js document object model, I was using snake case but I'm changing to camel case because it mkaes more sense in Javascript
+
+20/12/2025
+
+-I came back to my code and realized that trying to manage the style as well as the advancement of the game was a getting a bit muddy, so I'm
+  focusing on game progression for now, not style
+
+-Now understanding the importance of checking ";" instead of "," .. a couple hours later
+
+-I decided right now to just stick with a funny text based game just to make sure the mechanics work, before focusing on the visuals tomorrow.
+ I'm looking forward to that.
+
+-I added features for certain names entered like David Malan, David J. Malan, Elon, Jeff (this one is funny), and Marvin
+-I added two features that instantly end the game abruptly
+
+21/12/2025
+-I fixed a few endings, and I decided to incorporate achievements and keep track of how many times the user playst the game.
+-Organizing my files is super important
+
+-seeing this come together is really exciting! I debugged all day and probably got carried away with extra features.
+
+-having tourlb eiwht title screen overlapping the intro because of all my different starting points
+
+-https://ishadeed.com/article/custom-scrollbars-css/ < customizing scrollbar
+
+-AAH the whitespace was being counted as indentation!!!!! HOURS later..
+
+- finally got it working and tested every outcome and feature! Now I'll attempt to upload my own art into my game
+
